@@ -1,0 +1,33 @@
+{
+  "name": "truelife",
+  "description": "An empty new project",
+  "slug": "truelife",
+  "privacy": "unlisted",
+  "sdkVersion": "17.0.0",
+  "version": "1.0.0",
+  "orientation": "portrait",
+  "primaryColor": "#cccccc",
+  "hooks": {
+    "postPublish": [
+      {
+        "file": "sentry-expo/upload-sourcemaps",
+        "config": {
+          "organization": "Anthony Comito",
+          "project": "truelife",
+          "authToken": "6eb981d2f49e43209b46ee67d64d773b"
+        }
+      }
+    ]
+  },
+  "icon": "./assets/icons/app.png",
+  "loading": {
+    "icon": "./assets/icons/loading.png",
+    "hideExponentText": false
+  },
+  "packagerOpts": {
+    "assetExts": ["ttf", "mp4"]
+  },
+  "ios": {
+    "supportsTablet": true
+  }
+}
